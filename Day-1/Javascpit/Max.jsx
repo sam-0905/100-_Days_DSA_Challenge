@@ -1,3 +1,5 @@
+// Brute force solution 
+
 let arr = [1,2,3,4,5,6]
 
 function findMaxNum(num){
@@ -12,5 +14,7 @@ function findMaxNum(num){
 }
 
 findMaxNum(arr)
+
+
 
 
