@@ -16,3 +16,7 @@ print(result)
 
 # Built in method
 find_max = lambda num: max(num)
+
+result = find_max(arr)
+
+
