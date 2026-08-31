@@ -28,3 +28,11 @@ const findMax = (num) => Math.max(...num)
 findMax(arr)
 
 
+//Functional Approach using reduce()
+
+/** 
+ * Time Complexity: O(n)
+ * Time Complexity: O(n)
+*/
+
+const findLargest  = (Max, cur) => cur > Max ? cur : Max
