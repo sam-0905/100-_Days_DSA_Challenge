@@ -1,5 +1,6 @@
 // Brute force solution 
 
+// Time and Space complexity is O(n)
 let arr = [1,2,3,4,5,6]
 
 function findMaxNum(num){
@@ -15,6 +16,15 @@ function findMaxNum(num){
 
 findMaxNum(arr)
 
+// Built-in Math.max with Spread Operator (Fastest & Most Concise)
 
+/**
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ * */ 
+
+const findMax = (num) => Math.max(...num)
+
+findMax(arr)
 
 
