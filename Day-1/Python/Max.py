@@ -20,3 +20,8 @@ find_max = lambda num: max(num)
 result = find_max(arr)
 
 
+# Approach using reduce()
+
+find_largest = lambda max_val, cur: cur if cur > max_val else max_val
+
+result = find_largest
