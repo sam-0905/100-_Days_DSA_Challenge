@@ -41,3 +41,12 @@ function findMaxNum(num){
 findMaxNum(arr)
 
 
+
+// Sorting
+/** 
+ * Time Complexity: O(n log n)
+ * Space Complexity: O(1)
+ */ 
+
+const FindMax = arr.sort((a,b) => a-b)
+return FindMax[FindMax.length - 1]
