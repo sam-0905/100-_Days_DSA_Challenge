@@ -32,3 +32,10 @@ def findMax(num) :
 result = findMax(arr)
 
 print(result)
+
+
+# Sorting
+def find_largest(arr):
+    arr.sort()
+
+    return arr[-1]
