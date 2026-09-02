@@ -13,3 +13,20 @@ function reverseArray(arr) {
 }
 
 
+// optimized approach
+
+//  Time Complexity: O(n)
+//  Space Complexity: O(1)
+
+
+function reverseArrayOptimized(arr) {
+    let left = 0;
+    let right = arr.length - 1;
+
+    while(left < right){
+        [arr[left], arr[right]] = [arr[right], arr[left]];
+        left++;
+        right--;
+    }
+    return arr;
+}
