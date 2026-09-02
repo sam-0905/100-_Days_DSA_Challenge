@@ -47,3 +47,10 @@ function reverseArrayV2(arr) {
     }
     return arr;
 }
+
+
+// Using built-in methods
+
+function reverseArrayBuiltIn(arr) {
+    return arr.reverse();
+}
