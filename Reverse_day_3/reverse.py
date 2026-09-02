@@ -22,3 +22,10 @@ def reverse_string_optimized(s):
 
 result = reverse_string_optimized(arr)
 print(result)  
+
+# Reverse
+
+def reverse_string_2(s):
+    return s[::-1]
+result = reverse_string_2(arr)
+print(result)
