@@ -6,17 +6,20 @@ let arr = [1,2,3,4,5,6]
  * Space Complexity: O(1)
  */ 
 
-for(let i=0; i<arr.length; i++){
-    isLargest = true
+function findLargest(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let isLargest = true;
 
-    for(let j=0; j<arr.length; j++){
-        if(arr[j] > arr[i]){
-            isLargest = false
-            break
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] > arr[i]) {
+                isLargest = false;
+                break;
+            }
         }
-    }
-    if(isLargest){
-        return arr[i]
+
+        if (isLargest) {
+            return arr[i];
+        }
     }
 }
 
