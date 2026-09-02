@@ -42,3 +42,14 @@ function findSmallest(arr) {
      return smallest
 }
 
+
+
+// Using built-in sort method
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(1)
+
+function findSmallest(arr){
+    const sortedArr = arr.sort((a,b) => a-b)
+    return sortedArr[0]
+}
