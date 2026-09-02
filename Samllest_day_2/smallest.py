@@ -20,6 +20,8 @@ def smallest(arr):
 # Track Minimum 🚀
 
 def findMin(arr):
+    if len(arr) == 0:
+        return None  # Handle empty array case
     min = arr[0]
     for i in arr:
         if(i < min):
