@@ -7,6 +7,10 @@ let arr = [11,2,33,4,55,6]
 
 function findSmallestNum(arr){
 
+    if(arr.length === 0){
+        return null
+    }
+
     for(let i=0; i<arr.length; i++){
 
     let isSmallest = true;
@@ -33,6 +37,9 @@ function findSmallestNum(arr){
 
 
 function findSmallest(arr) {
+    if(arr.length === 0){
+        return null
+    }
     let smallest = arr[0];
      for(let i=0; i<arr.length;i++){
         if(arr[i]< smallest){
