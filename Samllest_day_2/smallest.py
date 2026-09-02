@@ -16,3 +16,18 @@ def smallest(arr):
     result = smallest(arr)
     print("result",result)
 
+
+# Track Minimum 🚀
+
+def findMin(arr):
+    min = arr[0]
+    for i in arr:
+        if(i < min):
+            min = i
+    return min
+
+
+# Sorting
+def find_smallest(arr):
+    arr.sort()
+    return arr[0]
