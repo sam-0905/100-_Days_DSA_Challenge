@@ -28,3 +28,23 @@ function countFrequency(arr){
     return result 
 
 }
+
+
+// Optimized approach
+
+
+function countOcc(arr){
+
+    const frequency = {}
+
+    for(num of arr){
+        if(frequency[num]){
+            frequency[num]++
+        }
+        else frequency[num] = 1
+    }
+
+    return frequency
+
+}
+
