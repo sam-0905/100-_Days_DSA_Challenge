@@ -27,6 +27,8 @@ print(result)
 
 
 # optimized countOcc
+# Time: O(n) 
+# Space: O(n)
 def countOcc(arr):
     frequency = {}
 
@@ -40,6 +42,8 @@ print(result)
 
 
 # sorting
+# Time: O(n log n)
+# Space: O(n)
 
 def countFreq(arr):
     arr.sort()

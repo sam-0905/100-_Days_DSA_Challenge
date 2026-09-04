@@ -31,7 +31,9 @@ function countFrequency(arr){
 
 
 // Optimized approach
-
+/**
+ * Time: O(n) 
+ * Space: O(n)*/ 
 
 function countOcc(arr){
 
@@ -50,6 +52,8 @@ function countOcc(arr){
 
 
 // v2
+// Time: O(n log n)
+// Space: O(n)
 
 function countOccV2(arr){
     const frequency = {}
