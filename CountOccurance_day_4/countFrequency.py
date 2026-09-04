@@ -24,4 +24,33 @@ def countOccurrence(arr):
 
 result = countOccurrence(arr)
 print(result)
-    
+
+
+# optimized countOcc
+def countOcc(arr):
+    frequency = {}
+
+    for num in arr:
+        frequency[num] = frequency.get(num,0) + 1
+
+    return frequency
+
+result = countOcc(arr)
+print(result)
+
+
+# sorting
+
+def countFreq(arr):
+    arr.sort()
+
+    frequency ={}
+
+    for num in arr:
+        frequency[num] = frequency.get(num,0) + 1
+    return frequency
+
+
+     
+result = countFreq(arr)
+print(result)
