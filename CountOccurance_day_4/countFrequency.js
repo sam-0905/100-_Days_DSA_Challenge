@@ -23,4 +23,6 @@ function countFrequency(arr){
     seen.push(arr[i])
     }
 
+    return result 
+
 }
