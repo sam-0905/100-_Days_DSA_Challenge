@@ -48,3 +48,14 @@ function countOcc(arr){
 
 }
 
+
+// v2
+
+function countOccV2(arr){
+    const frequency = {}
+
+    for(num of arr){
+        frequency[num] = (frequency[num] || 0) + 1 
+    }
+    return frequency
+}
