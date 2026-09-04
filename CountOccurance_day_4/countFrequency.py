@@ -7,11 +7,12 @@ arr = [1,2,3,4,2,4,1]
 def countOccurrence(arr):
     seen = []
     result ={}
-    count = 0
 
     for i in range(len(arr)):
         if arr[i] in seen:
             continue
+
+        count = 0
 
         for j in range(len(arr)):
             if arr[i] == arr[j]:
@@ -19,7 +20,7 @@ def countOccurrence(arr):
         result[arr[i]] = count
         seen.append(arr[i])
 
-    return arr[i]
+    return result
 
 result = countOccurrence(arr)
 print(result)
