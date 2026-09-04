@@ -59,3 +59,16 @@ function countOccV2(arr){
     }
     return frequency
 }
+
+
+// Sorting
+
+function countFreq(arr){
+    arr.sort((a,b) => a-b) ;
+        const frequency = {}
+
+    for(num in arr){
+        frequency[num] = (frequency[num] || 0) + 1
+    }
+    return frequency
+}
