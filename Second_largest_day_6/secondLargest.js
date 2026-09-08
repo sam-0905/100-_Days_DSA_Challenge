@@ -53,3 +53,27 @@ function secondLargest(arr) {
 }
 
 
+
+// using math.max 
+//  * Time Complexity: O(n)
+//  * space Complexity: O(1)
+
+function secondLargestMath(arr) {
+
+    if (arr.length < 2) {
+        return null;
+    }
+
+    const largest = Math.max(...arr);
+
+    let secondLargest = -Infinity;
+
+    for(let i = 0;i<arr.length;i++){{
+        if(arr[i] > secondLargest && arr[i] != largest){
+            secondLargest = arr[i];
+    }
+
+}
+return secondLargest;
+}
+}
