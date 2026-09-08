@@ -30,3 +30,19 @@ function isArraySorted(arr){
 }
 
 
+// using built-in method sorted
+// Time Complexity: O(nlogn)   
+// space Complexity: O(n)
+
+function isArraySortedUsingBuiltIn(arr){
+
+    const sortedArr = [...arr].sort((a,b) => a-b);
+
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] !== sortedArr[i]){
+            return false;
+        }   
+}
+        return true;
+
+}
