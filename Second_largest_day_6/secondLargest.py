@@ -40,3 +40,18 @@ def  second_largest_opt(arr):
 
 result = second_largest_opt([1, 2, 3, 4, 5])
 print(result)  # Output: 4
+
+
+
+# math module approach
+
+def second_largest_math(arr):
+    if len(arr) < 2:
+        return None
+    largest = max(arr)
+    arr.remove(largest)
+    second_largest = max(arr)
+    return second_largest
+
+result = second_largest_math([1, 2, 3, 4, 5])
+print(result)  # Output: 4
