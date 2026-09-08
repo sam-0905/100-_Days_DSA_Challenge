@@ -25,3 +25,15 @@ def checkArrayOptimized(arr):
 
 result = checkArrayOptimized([1, 2, 3, 4, 5])
 print(result)
+
+
+# sort array in ascending order
+# Time Complexity: O(n log n)
+# Space Complexity: O(n)
+
+def sortArray(arr):
+    sorted_arr = sorted(arr)
+    return arr == sorted_arr    
+
+result = sortArray([1, 2, 3, 4, 5])
+print(result)
