@@ -1,3 +1,31 @@
+// brute force solution
+// time complexity: O(n)
+// space complexity: O(1)
+
+function secondLargestNum(arr){
+
+    if (arr.length < 2) {
+        return null;
+    }
+
+    let largest = -Infinity;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    
+    let secondLargest = -Infinity;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > secondLargest && arr[i] != largest) {
+            secondLargest = arr[i];
+        }
+}
+    return secondLargest;
+}
+
+}
+
 
 // optimized solution
 /**
@@ -23,3 +51,5 @@ function secondLargest(arr) {
     }
     return secondLargest;
 }
+
+
