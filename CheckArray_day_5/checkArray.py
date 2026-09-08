@@ -13,4 +13,15 @@ def checkArray(arr):
 result = checkArray([1, 2, 3, 4, 5])
 print(result)  
 
+# optimized method to check if an array is sorted
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 
+def checkArrayOptimized(arr):
+    for i in range(len(arr)-1):
+        if arr[i] > arr[i+1]:
+            return False
+    return True
+
+result = checkArrayOptimized([1, 2, 3, 4, 5])
+print(result)
