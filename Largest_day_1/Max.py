@@ -22,8 +22,8 @@ def find_largest(arr):
 
 #  Track Maximum 🚀
 
-def findMax(num) :
-    max = 0
+def findMax(arr) :
+    max = arr[0]
     for i in arr:
         if(i > max):
             max = i
