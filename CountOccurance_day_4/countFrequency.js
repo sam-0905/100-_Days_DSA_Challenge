@@ -15,13 +15,13 @@ function countFrequency(arr){
         }
     let count = 0
 
-    for(let j =0; i,arr.length; j++){
+    for(let j =0; j<arr.length; j++){
         if(arr[i] === arr[j]){
             count ++
         }
     }
 
-    result[arr(i)] = count;
+    result[arr[i]] = count;
     seen.push(arr[i])
     }
 
