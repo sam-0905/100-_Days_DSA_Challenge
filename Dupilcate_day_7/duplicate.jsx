@@ -14,4 +14,19 @@ function duplicate(arr){
 return null;
 }
 
+// optimized method
 
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+function duplicateOptimized(arr){
+    let set = new Set();
+
+    for(let i=0; i<arr.length; i++){
+        if(set.has(arr[i])){
+            return arr[i]
+        }
+        set.add(arr[i])
+}
+    return null;
+}
