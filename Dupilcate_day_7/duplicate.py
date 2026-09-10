@@ -16,6 +16,10 @@ result = duplicate(arr)
 print(result)
 
 # optimized method
+
+# Time complexity: O(n)
+# space complexity: O(1)
+
 def find_duplicate(arr):
     slow = arr[0]
     fast = arr[0]

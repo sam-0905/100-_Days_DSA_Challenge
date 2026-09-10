@@ -18,6 +18,10 @@ return null;
 
 // ⚡ Floyd's Cycle Detection — Find the Duplicate
 
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
 function findDuplicate(arr) {
     let slow = arr[0];
     let fast = arr[0];
