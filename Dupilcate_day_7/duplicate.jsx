@@ -16,7 +16,28 @@ return null;
 
 // optimized method
 
+// ⚡ Floyd's Cycle Detection — Find the Duplicate
 
+function findDuplicate(arr) {
+    let slow = arr[0];
+    let fast = arr[0];
+
+    // Phase 1: Find a meeting point inside the cycle
+    do {
+        slow = arr[slow];
+        fast = arr[arr[fast]];
+    } while (slow !== fast);
+
+    // Phase 2: Find the entrance of the cycle
+    slow = arr[0];
+
+    while (slow !== fast) {
+        slow = arr[slow];
+        fast = arr[fast];
+    }
+
+    return slow;
+}
 
 // using set data structure
 

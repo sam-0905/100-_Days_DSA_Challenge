@@ -15,7 +15,27 @@ result = duplicate(arr)
 
 print(result)
 
+# optimized method
+def find_duplicate(arr):
+    slow = arr[0]
+    fast = arr[0]
 
+    # Phase 1: Find a meeting point inside the cycle
+    while True:
+        slow = arr[slow]
+        fast = arr[arr[fast]]
+
+        if slow == fast:
+            break
+
+    # Phase 2: Find the entrance of the cycle
+    slow = arr[0]
+
+    while slow != fast:
+        slow = arr[slow]
+        fast = arr[fast]
+
+    return slow
 
 # using set to check for duplicates
 # Time complexity: O(n)
