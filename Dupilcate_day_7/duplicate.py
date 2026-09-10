@@ -1,4 +1,6 @@
-# Brute for method 
+# Brute for method
+# Time complexity: O(n^2)
+# space complexity: O(1)
 
 arr = [1,2,3,4,5,6,7,8,9,10,10]
 
@@ -12,4 +14,5 @@ def duplicate(arr):
 result = duplicate(arr)
 
 print(result)
+
 
