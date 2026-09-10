@@ -1,5 +1,7 @@
 // Brute force method
 
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
 
 function duplicate(arr){
     for(let i=0; i<arr.length; i++){
@@ -11,3 +13,5 @@ function duplicate(arr){
 }
 return null;
 }
+
+
