@@ -1,4 +1,4 @@
-# Brute for method
+# Brute force method
 # Time complexity: O(n^2)
 # space complexity: O(1)
 
@@ -16,3 +16,18 @@ result = duplicate(arr)
 print(result)
 
 
+
+# using set to check for duplicates
+# Time complexity: O(n)
+# space complexity: O(n)
+
+def duplicateOpt(arr):
+    seen = set()
+    for num in arr:
+        if num in seen:
+            return True
+        seen.add(num)
+    return None
+
+result = duplicateOpt(arr)
+print(result)
