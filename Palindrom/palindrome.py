@@ -28,5 +28,13 @@ def isPalindromeFun(s):
 
         left +=1
         right -=1
-        
+
     return True
+
+
+# reverse method
+# Time: O(n)
+# Space: O(n) because s[::-1] creates a new reversed string.
+
+def isPalindromeRev(s):
+    return
