@@ -15,3 +15,23 @@ function isPalindrome(arr){
         return false
     }
 }
+
+
+// optimized method 
+// Time complexity - O(n)
+// Space complexity - O(1) 
+
+function isPalindrome1(arr){
+    let left =0;
+    let right = arr.length-1
+
+    while(left<right){
+        if(arr[left] !== arr[right]){
+            return false
+        }
+    left++
+    right--
+    }
+    return true
+    
+}
