@@ -35,3 +35,12 @@ function isPalindrome1(arr){
     return true
     
 }
+
+// Using reverse method
+
+function checkPalindrome(arr){
+
+    const revArr = arr.split('').reverse().join()
+
+    return revArr === arr
+}
