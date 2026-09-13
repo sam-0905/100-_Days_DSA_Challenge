@@ -3,9 +3,9 @@
 // Space complexity - O(n) 
 
 function isPalindrome(arr){
-    let rev = []
-    for(let i=arr.length-1; i>0; i--){
-        rev.push(arr[i])
+    let rev = ""
+    for(let i=arr.length-1; i>=0; i--){
+        rev += arr[i]
     }
     
     if(rev === arr){
