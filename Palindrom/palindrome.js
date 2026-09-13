@@ -1,4 +1,6 @@
 // Brute force method
+// Time complexity - O(n)
+// Space complexity - O(n) 
 
 function isPalindrome(arr){
     let rev = []
