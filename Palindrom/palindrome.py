@@ -37,4 +37,4 @@ def isPalindromeFun(s):
 # Space: O(n) because s[::-1] creates a new reversed string.
 
 def isPalindromeRev(s):
-    return
+    return s == s[::]-1
