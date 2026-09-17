@@ -10,3 +10,22 @@ def twoSum(arr,target):
     return []
 
 
+
+# optimized way 
+
+# // Time complexity O(n)
+# // space complexity O(n) 
+
+def twoSumNum(arr,target) :
+
+    seen = set()
+
+    for num in arr:
+        needed = seen - target
+
+        if needed in seen:
+                return[needed,num]
+
+        seen.add(num)
+
+    return[num]
