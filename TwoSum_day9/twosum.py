@@ -29,3 +29,24 @@ def twoSumNum(arr,target) :
         seen.add(num)
 
     return[num]
+
+
+# Sorting
+
+def twoSumSorting(arr,target):
+
+    left = 0
+    right = len(arr) -1
+
+    while(left <right):
+        sum = arr[left] +arr[right]
+
+        if sum == target:
+            return [arr[left],arr[right]]
+
+        if(sum > target):
+            right -+ 1
+        else:
+            left += 1
+
+    return[]
