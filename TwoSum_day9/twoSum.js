@@ -36,3 +36,29 @@ function checkTwoSumNum(arr,target){
     }
     return []
 }
+
+
+// Sorting method 
+// Time: O(n log n)
+
+
+function twoSumSort(arr,target){
+ let left =0
+ let right = arr.length-1
+
+ while(left<right){
+    const sum = arr[left] + arr[right]
+
+    if(sum === target){
+        return [arr[left],arr[right]]
+    }
+
+    if(sum >target){
+        right --;
+    }else{
+        left++
+    }
+ }
+
+ return []
+}
