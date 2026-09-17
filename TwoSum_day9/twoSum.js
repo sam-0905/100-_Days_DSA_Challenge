@@ -15,3 +15,21 @@ function twoSum(arr, target){
     return []
 
 }
+
+
+// optimized way 
+
+function checkTwoSumNum(arr,target){
+
+    const seen = new Set()
+
+    for(const num of arr){
+        const needed = seen - target
+
+        if(seen.has(needed)){
+            return [needed,num]
+        }
+        seen.add(num)
+    }
+    return []
+}
