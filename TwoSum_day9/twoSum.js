@@ -19,6 +19,9 @@ function twoSum(arr, target){
 
 // optimized way 
 
+// Time complexity O(n)
+// space complexity O(n)
+
 function checkTwoSumNum(arr,target){
 
     const seen = new Set()
