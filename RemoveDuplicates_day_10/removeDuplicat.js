@@ -18,6 +18,10 @@ function removeDuplicates(arr){
 
 // optimized approach
 
+// Time: O(n) 
+// Space: O(n)
+
+
 function removeDuplicatesArr(arr) {
     if (arr.length === 0) {
         return 0;
