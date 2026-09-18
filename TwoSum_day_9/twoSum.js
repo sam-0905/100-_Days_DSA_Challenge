@@ -27,7 +27,7 @@ function checkTwoSumNum(arr,target){
     const seen = new Set()
 
     for(const num of arr){
-        const needed = seen - num
+        const needed = target - num
 
         if(seen.has(needed)){
             return [needed,num]
