@@ -14,3 +14,15 @@ function removeDuplicates(arr){
     }
     return result
 }
+
+
+
+
+// Using set 
+// Time: O(n) 
+// Space: O(n)
+
+
+function checkDuplicate(arr){
+    return[...new Set(arr)]
+}
