@@ -19,7 +19,7 @@ function removeDuplicates(arr){
 // optimized approach
 
 // Time: O(n) 
-// Space: O(n)
+// Space: O(1)
 
 
 function removeDuplicatesArr(arr) {
