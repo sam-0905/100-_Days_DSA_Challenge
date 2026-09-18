@@ -11,3 +11,13 @@ def checkDuplicate(arr):
             result.append(num)
 
     return result
+
+
+# using set
+
+# Time: O(n)
+# Space: O(n)
+
+
+def removeDuplicate(arr):
+    return list(set(arr))
