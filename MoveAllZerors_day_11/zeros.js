@@ -22,3 +22,28 @@ function movesZeros(arr){
 
     return result
 }
+
+
+// Optimized way
+
+// Time: O(n)
+// Space: O(1)
+
+
+function movesZerosToEnd(arr){
+    let insertPos = 0
+
+    for(let i=0; i<arr.length;i++){
+        if(arr[i]!= 0){
+            arr[insertPos] = arr[i]
+            insertPos++
+        }
+    }
+
+    while(insertPos <arr.length){
+        arr[insertPos] = 0
+        insertPos--
+    }
+
+    return arr
+}
