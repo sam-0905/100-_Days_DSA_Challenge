@@ -22,6 +22,8 @@ def movesZeros(arr):
 
 
 # Optimized 
+# Time: O(n)
+# Space: O(n)
 
 def movesZerosToEnd(arr):
 
@@ -39,6 +41,8 @@ def movesZerosToEnd(arr):
        return arr
  
 # Swap
+# Time: O(n)
+# Space: O(n)
 
 def move_zeros(arr):
     insert_pos = 0
