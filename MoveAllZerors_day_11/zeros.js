@@ -47,3 +47,21 @@ function movesZerosToEnd(arr){
 
     return arr
 }
+
+
+// swap method
+// Time: O(n)
+// Space: O(1)
+
+function moveZerosArr(arr) {
+    let insertPos = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== 0) {
+            [arr[insertPos], arr[i]] = [arr[i], arr[insertPos]];
+            insertPos++;
+        }
+    }
+
+    return arr;
+}
