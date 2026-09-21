@@ -18,3 +18,23 @@ def movesZeros(arr):
        zeroCount -= 1
       
     return result
+
+
+
+# Optimized 
+
+def movesZerosToEnd(arr):
+
+    insert_pos = 0
+
+    for i in range (len(arr)):
+       if(arr[i] != 0):
+          arr[insert_pos] = arr[i]
+          insert_pos += 1
+
+       while(insert_pos < len(arr)):
+          arr[insert_pos] = 0
+          insert_pos -= 1
+
+       return arr
+ 
