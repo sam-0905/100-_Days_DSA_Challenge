@@ -1,5 +1,8 @@
 // Brute force method
 
+// Time: O(n)
+// Space: O(n)
+
 function movesZeros(arr){
     let result = []
     let zeroCount =0
