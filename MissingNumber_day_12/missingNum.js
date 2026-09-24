@@ -1,5 +1,6 @@
 // Brute force method
-
+// Time: O(n^2) 
+// Space: O(1)
 
 function checkTheMissingNum(arr){
 
@@ -16,6 +17,9 @@ function checkTheMissingNum(arr){
 
 // Optimized method
 
+// Time: O(n) 
+// Space: O(1)
+
 function findMissingNumber(arr){
         const n = arr.length
 
@@ -30,6 +34,9 @@ function findMissingNumber(arr){
 }
 
 // using set method
+
+// Time: O(n) 
+// Space: O(n)
 
 function  missingNum(arr){
     const seen = new Set(arr)
