@@ -1,4 +1,6 @@
 # Brute force method
+# Time: O(n^2) 
+# Space: O(1)
 
 
 def checkTheMissingNum(arr):
@@ -11,6 +13,9 @@ def checkTheMissingNum(arr):
     return -1
 
 # Optimized method
+
+# Time: O(n) 
+# Space: O(1)
 
 def findMissingNumber(arr):
 
@@ -26,6 +31,9 @@ def findMissingNumber(arr):
     return expectedNum - actualNum  
 
 # set method
+
+# Time: O(n) 
+# Space: O(n)
 
 def find_missing_number(arr):
     seen = set(arr)
