@@ -7,7 +7,7 @@ function checkTheMissingNum(arr){
 
     for(let i=0; i<=n; i++){
         if(!arr.includes(num)){
-            return numm
+            return num
         }
     }
     return -1
