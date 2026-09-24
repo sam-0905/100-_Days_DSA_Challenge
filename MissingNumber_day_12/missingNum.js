@@ -28,3 +28,16 @@ function findMissingNumber(arr){
         }
         return expectedSum - actualNum
 }
+
+// using set method
+
+function  missingNum(arr){
+    const seen = new Set(arr)
+
+    for(let i =0; i<=n; i++){
+        if(!seen.has(i)){
+            return i
+        }
+    }
+    return -1
+} 

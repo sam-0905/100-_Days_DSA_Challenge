@@ -24,3 +24,14 @@ def findMissingNumber(arr):
         actualNum += 1
 
     return expectedNum - actualNum  
+
+# set method
+
+def find_missing_number(arr):
+    seen = set(arr)
+
+    for num in range(len(arr) + 1):
+        if num not in seen:
+            return num
+
+    return -1
