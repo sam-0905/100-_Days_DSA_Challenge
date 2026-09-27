@@ -23,3 +23,26 @@ function checkAnagram(s,t){
     }
     return true
 }
+
+// Optimized
+
+function isAnagram(s,t){
+    if(s.length !== t.length) return false
+
+    const frequency = {}
+
+    for(const char of s){
+        frequency[char] = (frequency[char] || 0 )+ 1 
+    }
+
+    for(const char of t) {
+        if(!frequency[char]){
+            return false
+        }
+    }
+
+    return true
+}
+
+
+
