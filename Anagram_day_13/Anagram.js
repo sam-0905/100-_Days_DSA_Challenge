@@ -25,6 +25,8 @@ function checkAnagram(s,t){
 }
 
 // Optimized
+// Time: O(n²)
+// Space: O(1)
 
 function isAnagram(s,t){
     if(s.length !== t.length) return false
@@ -43,6 +45,7 @@ function isAnagram(s,t){
 
     return true
 }
+
 
 
 
