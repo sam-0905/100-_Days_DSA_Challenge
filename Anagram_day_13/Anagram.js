@@ -48,4 +48,16 @@ function isAnagram(s,t){
 
 
 
+// using sort method
+// Time: O(n log n)
+// Space: O(n)
 
+function sortAnagram(s,t){
+
+    if(s.length !== t.length) return false
+
+    const sSort = s.split("").sort().join("")
+    const tSort = s.split("").sort().join("")
+
+    return sSort === tSort
+}
