@@ -19,3 +19,26 @@ function firstUniqChar(s) {
     return count === 1 ? i : -1;
 }
 }
+
+// optimized method
+
+// Time Complexity: O(n)
+// space Complexity: O(n)
+
+
+function firstUniqueChar(s) {
+
+    const frequencyMap = {};
+
+    for(num of s){
+        frequencyMap[num] = (frequencyMap[num] || 0) + 1;
+    }
+
+    for(let i=0; i<s.length; i++){
+        if(frequencyMap[s[i]] === 1){
+            return i;
+        }
+    }
+
+    return -1;
+}
