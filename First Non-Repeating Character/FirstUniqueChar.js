@@ -42,3 +42,26 @@ function firstUniqueChar(s) {
 
     return -1;
 }
+
+// fixed-Size Frequency Array
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+function firstUniqueChar(s) {
+    const freq = new Array(26).fill(0);
+
+    for (const char of s) {
+        freq[char.charCodeAt(0) - 97]++;
+    }
+
+    for (let i = 0; i < s.length; i++) {
+        const index = s.charCodeAt(i) - 97;
+
+        if (freq[index] === 1) {
+            return i;
+        }
+    }
+
+    return -1;
+}

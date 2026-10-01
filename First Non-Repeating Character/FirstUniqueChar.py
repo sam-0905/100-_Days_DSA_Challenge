@@ -29,3 +29,19 @@ def firstUniqChar(s):
             return i
     return -1
 
+# fixed-Size Frequency Array
+
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+def first_unique_char(s):
+    freq = [0] * 26
+
+    for char in s:
+        freq[ord(char) - ord('a')] += 1
+
+    for i, char in enumerate(s):
+        if freq[ord(char) - ord('a')] == 1:
+            return i
+
+    return -1
