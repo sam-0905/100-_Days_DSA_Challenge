@@ -33,3 +33,29 @@ def findMajorityElem(arr):
             return key
     return None
 
+
+# optimized method (Boyer–Moore Voting Algorithm)
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+
+def majorityElement(arr):
+    count= 0
+    candidate = None
+
+    for num in arr:
+        if count == 0:
+            candidate = num
+
+        if num == candidate:
+            count += 1
+        else:
+            count -= 1
+
+    return candidate
+
+
+        
+
+
+
