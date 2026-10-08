@@ -42,3 +42,29 @@ function find_Majority_Element(arr){
 }
 
 }
+
+
+// optimized method (Boyer–Moore Voting Algorithm)
+// Time complexity: O(n)
+// Space complexity: O(1)
+
+
+function majorityElement(arr) {
+
+    let candidate = null;
+    let count = 0;
+
+    for(const num of arr) {
+        if(count === 0){
+            candidate = num;
+        }
+
+        if(num === candidate){
+            count++;
+        } 
+        else{
+            count--;
+        }
+    }
+    return candidate;
+}
