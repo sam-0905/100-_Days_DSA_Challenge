@@ -1,7 +1,7 @@
 
 // Brute force method
 // Time complexity: O(n^2)
-// space complexity: O(1)
+// Space complexity: O(1)
 
 function findMajorityElement(arr){
 
@@ -19,4 +19,26 @@ function findMajorityElement(arr){
 
 }
     return null
+}
+
+
+// frequency map method
+// Time complexity: O(n)
+// Space complexity: O(n)
+
+
+function find_Majority_Element(arr){
+
+    const frequencyMap = {};
+
+    for(const num of arr){{
+        frequencyMap[num] = (frequencyMap[num] || 0) + 1;
+    }
+
+    if(frequencyMap[num] > arr.length / 2){
+        return num;
+    }
+    return null;
+}
+
 }
