@@ -39,3 +39,35 @@ function setIntersection(arr1, arr2) {
     return result;
 
 }
+
+
+// Two pointer method
+
+// space complexity: O(n+m)
+// time complexity: O(nlogn + mlogm)
+
+function twoPointerIntersection(arr1, arr2) {
+
+    arr1.sort((a,b) => a-b);
+    arr2.sort((a,b) => a-b);
+
+    let i = 0;
+    let j = 0;
+    const result = [];
+
+    for(let i=0; i<arr1.length && j<arr2.length;){
+        if(arr1[i] === arr2[j]){
+            result.push(arr1[i]);
+            i++;
+            j++;
+        } else if(arr1[i] < arr2[j]){
+            i++;
+        } else {
+            j++;
+        }
+
+}
+
+return result;
+
+}
