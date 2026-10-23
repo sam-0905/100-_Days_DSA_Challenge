@@ -32,6 +32,10 @@ def set_intersection(arr1, arr2):
 
 # Two pointer method
 
+# space complexity: O(n+m)
+# Time complexity: O(nlogn + mlogm)
+
+
 def intersection_arrays(arr1, arr2):
     arr1.sort()
     arr2.sort()
