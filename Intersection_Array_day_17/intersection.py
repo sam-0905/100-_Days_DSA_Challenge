@@ -18,13 +18,10 @@ def intersection(arr1, arr2):
 # Time complexity: O(n+m)
 
 """
-set(arr1) → {1, 2, 3} — removes duplicates.
-
-set(arr2) → {2, 4} — removes duplicates.
-
-& → finds common elements between the two sets.
-
-list() → converts the resulting set into a list
+-set(arr1) → {1, 2, 3} — removes duplicates.
+-set(arr2) → {2, 4} — removes duplicates.
+-& → finds common elements between the two sets.
+-list() → converts the resulting set into a list
 """
 
 def set_intersection(arr1, arr2):
@@ -52,11 +49,13 @@ def intersection_arrays(arr1, arr2):
             j += 1
 
         elif arr1[i] < arr2[j]:
-            # Which pointer moves here?
-            ...
+            i += 1
 
         else:
-            # Which pointer moves here?
-            ...
+            j += 1
 
     return result
+
+
+print(intersection_arrays([1, 2, 2, 3], [2, 2, 4]))
+# [2]
