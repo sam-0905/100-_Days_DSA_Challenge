@@ -25,6 +25,9 @@ function findMaxConsecutive(arr) {
 
 // optimized method
 
+// Time Complexity: O(n)
+// space Complexity: O(1)
+
 function maxConsecutiveOnes(arr){
     let maxCount = 0
     let count =0 
@@ -40,3 +43,25 @@ function maxConsecutiveOnes(arr){
 return maxCount
 }
 
+
+// Sliding approach
+
+
+// Time Complexity: O(n)
+// space Complexity: O(1)
+
+function maxConsecutive_Ones(arr) {
+    let left = 0;
+    let maxCount = 0;
+
+    for (let right = 0; right < arr.length; right++) {
+
+        if (arr[right] === 0) {
+            left = right + 1;
+        }
+
+        maxCount = Math.max(maxCount, right - left + 1);
+    }
+
+    return maxCount;
+}
