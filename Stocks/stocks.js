@@ -14,3 +14,26 @@ function findMaxProfit (arr) {
     return maxProfit
 }   
 
+
+
+// optimized method
+
+// Time Complexity: O(n)
+// space Complexity: O(1)
+
+function maxProfit(arr){
+    let minPrice = Infinity
+    let maxProfit = 0
+
+    for(let i=0; i<arr.length; i++){
+        if(arr[i] < minPrice){
+        minPrice = arr[i]
+        }else{
+            let profit = arr[i] - minPrice
+            maxProfit = Math.max(maxProfit, profit)
+        }
+
+    }
+
+    return maxProfit
+}
