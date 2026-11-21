@@ -12,7 +12,7 @@ def singleNumber(nums):
         if count == 1:
             return nums[i]
         
-# Optimized method
+# Optimized method - XOR method
 # Time Complexity: O(n)
 # Space Complexity: O(1)
 
