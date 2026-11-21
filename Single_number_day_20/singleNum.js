@@ -32,3 +32,26 @@ function singleNumHash(arr){
         }
     }
 }
+
+
+
+// sorting method
+// Time Complexity: O(nlogn)
+// Space Complexity: O(1)           
+
+
+function singleNumberSorting(nums) {
+    nums.sort((a, b) => a - b);
+
+    let i = 0;
+
+    while (i < nums.length - 1) {
+        if (nums[i] === nums[i + 1]) {
+            i += 2;
+        } else {
+            return nums[i];
+        }
+    }
+
+    return nums[nums.length - 1];
+}
