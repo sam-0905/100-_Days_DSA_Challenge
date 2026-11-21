@@ -11,3 +11,14 @@ def singleNumber(nums):
                 count += 1
         if count == 1:
             return nums[i]
+        
+# Optimized method
+# Time Complexity: O(n)
+# Space Complexity: O(1)
+
+def singleNumberOptimized(nums):
+    result = 0
+    for num in nums:
+        result ^= num
+    return result
+    

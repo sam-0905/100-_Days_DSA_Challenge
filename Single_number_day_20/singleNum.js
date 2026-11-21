@@ -16,3 +16,19 @@ function singleNum(arr){
         }
     }
 }
+
+// Hashing method
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+function singleNumHash(arr){
+    let hash = {}; 
+    for(num of arr){
+        hash[num] = (hash[num] || 0) + 1;
+    }
+    for(num in hash){
+        if(hash[num] === 1){
+            return parseInt(num);
+        }
+    }
+}
